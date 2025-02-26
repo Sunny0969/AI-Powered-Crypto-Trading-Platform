@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+* {
+  font-family: "Anta";
+  color: white;
+}
+:root {
+  --primary-bg: linear-gradient(
+    0deg,
+    rgba(74, 31, 184, 1),
+    rgba(122, 90, 248, 1)
+  );
+  --secondary-bg: rgba(164, 144, 236, 0.25);
+  --border: 1px solid #a491ec;
+  --gray-dark: rgba(255, 255, 255, 0.4);
+  --gray-light: #9e9d9d;
+}
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #ffffff;
+}
+body {
+  background: var(--primary-bg);
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100vw;
+  padding-top: 12px;
+  padding-left: 51px;
+  padding-right: 51px;
+  overflow-x: hidden;
+}
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header h3 {
+  font-size: 24px;
+}
+.header img {
+  height: 74px;
+  width: 222px;
+  object-fit: contain;
+}
+.detail-head,
+.detail-row {
+  background: var(--secondary-bg);
+  border: var(--border);
+  border-radius: 5px;
+  padding: 10px 22px;
+  margin-top: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+.detail-head {
+  font-size: 20px;
+}
+.detail-head span {
+  width: 300px;
+  color: var(--gray-dark);
+}
+.detail-head span:last-child {
+  width: 200px;
+  text-align: right;
+}
+.detail-data {
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+.detail-data span {
+  width: 300px;
+}
+.detail-data span:last-child {
+  width: 200px;
+  padding-left: 120px;
+}
+.secondary-text {
+  color: rgba(247, 242, 242, 0.8);
+}
+@media screen and (max-width: 600px) {
+    .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    justify-items: center;
+  }
+  body {
+    padding-top: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .mouse-move-big {
+    display: none;
+  }
+  .mouse-move-sm {
+    display: none;
+  }
+  .scroll-container {
+    overflow-x: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    justify-items: center;
+  }
+  .child {
+    width: 1200px;
+  }
+  .mouse-move-big {
+    display: none;
+  }
+  .mouse-move-sm {
+    display: none;
+  }
+
+  .scroll-container {
+    overflow-x: auto;
+    width: 100%;
+  }
+}
+.active{
+  background: #241f47 !important;
+}

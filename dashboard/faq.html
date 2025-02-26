@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ Tabs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="/images/fav.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/cursor.css" />
+    <link rel="stylesheet" href="faq.css" />
+    <link rel="stylesheet" href="/dashboard/faq-responsive.css" />
+    <link rel="stylesheet" href="/networkanimation.css" />
+  </head>
+  <body class="">
+    <div class="mouse-move-big"></div>
+    <div class="mouse-move-sm"></div>
+    <div class="header">
+      <img src="/images/logo.svg" alt="" />
+      <div></div>
+      <div></div>
+    </div>
+    <div class="main">
+      <aside>
+        <div class="sidebar">
+          <div class="line"></div>
+          <a href="/dashboard/dashboard.html"
+            ><button class="btn-main">Trade</button>
+          </a>
+          <a href="/dashboard/profile.html"
+            ><button class="btn-main">Account</button>
+          </a>
+          <a href="/dashboard/dashboard.html"
+            ><button class="btn-main">Market</button>
+          </a>
+          <a href="/dashboard/support.html"
+            ><button class="btn-main">Support</button>
+          </a>
+          <a href="new.html">
+            <button class="btn-main">News</button>
+          </a>
+          <a href="/dashboard/wallet.html"
+            ><button class="btn-main">Wallet</button>
+          </a>
+          <a href="/dashboard/trade.html"
+            ><button class="btn-main">Trades</button>
+          </a>
+          <a class="logout" href="/dashboard/sign-up.html"> Logout </a>
+        </div>
+      </aside>
+      <!--  -->
+      <div class="burger-menu" onclick="toggleSidebar()">&#9776;</div>
+
+      <div id="sm-sidebar" class="sm-sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">&#10006;</button>
+
+        <div class="line"></div>
+        <a href="/dashboard/dashboard.html"
+          ><button class="btn-main">Trade</button></a
+        >
+        <a href="/dashboard/profile.html"
+          ><button class="btn-main">Account</button></a
+        >
+        <a href="/dashboard/dashboard.html"
+          ><button class="btn-main">Market</button></a
+        >
+        <a href="/dashboard/support.html"
+          ><button class="btn-main">Support</button></a
+        >
+        <a href="/dashboard/new.html"><button class="btn-main">News</button></a>
+        <a href="/dashboard/wallet.html"
+          ><button class="btn-main">Wallet</button></a
+        >
+        <a href="/dashboard/trade.html"
+          ><button class="btn-main">Trades</button>
+        </a>
+        <a class="logout" href="/dashboard/sign-up.html"> Logout </a>
+      </div>
+
+      <!--  -->
+      <div class="container">
+        <div class="content-section">
+          <div class="d-flex flex-column align-items-center">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            <div class="faq-container mt-3">
+              <div class="tabs">
+                <button class="btn-main" onclick="openTab(event, 'general')">
+                  General
+                </button>
+                <button
+                  class="btn-main"
+                  onclick="openTab(event, 'verification')"
+                >
+                  Verification
+                </button>
+                <button class="btn-main" onclick="openTab(event, 'account')">
+                  Account
+                </button>
+                <button class="btn-main" onclick="openTab(event, 'payouts')">
+                  Payouts
+                </button>
+                <button class="btn-main" onclick="openTab(event, 'payment')">
+                  Payment
+                </button>
+              </div>
+              <div id="general" class="tab-content active">
+                <h6 style="margin-top: 0px">
+                  1. What is BITBANCE.AI, and how does it work?
+                </h6>
+                <p>
+                  BITBANCE.AI is an artificial intelligence-based platform
+                  designed for cryptocurrency trading. It uses advanced
+                  algorithms and machine learning to analyze market trends,
+                  predict price movements, and execute trades automatically. The
+                  system claims a 96% accuracy rate, aiming to maximize user
+                  profits while minimizing risks.
+                </p>
+
+                <h6>
+                  2. How accurate is BITBANCE.AI, and is the 96% accuracy rate
+                  guaranteed?
+                </h6>
+                <p>
+                  BITBANCE.AI claims a 96% accuracy rate based on historical
+                  data and backtesting. However, it’s important to note that no
+                  trading system can guarantee 100% accuracy due to the volatile
+                  nature of cryptocurrency markets. Users should always be aware
+                  of potential risks and avoid investing more than they can
+                  afford to lose.
+                </p>
+
+                <h6>
+                  3. Do I need prior trading experience to use BITBANCE.AI?
+                </h6>
+                <p>
+                  No, BITBANCE.AI is designed for both beginners and experienced
+                  traders. Its auto-trading feature allows users to automate
+                  their trading strategies without needing in-depth knowledge of
+                  cryptocurrency markets. However, understanding basic trading
+                  concepts can help users make more informed decisions.
+                </p>
+
+                <h6>4. What cryptocurrencies does BITBANCE.AI support?</h6>
+                <p>
+                  BITBANCE.AI typically supports a wide range of popular
+                  cryptocurrencies, such as Bitcoin (BTC), Ethereum (ETH),
+                  Binance Coin (BNB), and others. The exact list of supported
+                  cryptocurrencies may vary, so users should check the platform
+                  for the most up-to-date information.
+                </p>
+
+                <h6>
+                  5. Is BITBANCE.AI safe to use, and how does it protect user
+                  funds?
+                </h6>
+                <p>
+                  BITBANCE.AI prioritizes security by using encryption and
+                  secure protocols to protect user data and funds. However,
+                  since it involves third-party integrations with exchanges,
+                  users should ensure they enable two-factor authentication
+                  (2FA) and follow best practices for securing their accounts.
+                  Always research the platform’s security measures and
+                  reputation before investing.
+                </p>
+              </div>
+              <div id="verification" class="tab-content">
+                <h6 style="margin-top: 0px">
+                  1. How does BITBANCE.AI verify its trading accuracy claims?
+                </h6>
+                <p>
+                  BITBANCE.AI verifies its 96% accuracy claim through extensive
+                  backtesting using historical market data and live trading
+                  results. The platform may provide users with access to
+                  performance reports, trade histories, and real-time analytics
+                  to demonstrate the effectiveness of its AI algorithms.
+                </p>
+
+                <h6>
+                  2. Is BITBANCE.AI’s performance audited by third parties?
+                </h6>
+                <p>
+                  To ensure transparency and build user trust, BITBANCE.AI may
+                  undergo third-party audits by independent firms. These audits
+                  evaluate the platform’s trading performance, accuracy, and
+                  security measures. Users can check for audit reports or
+                  certifications on the platform’s website.
+                </p>
+
+                <h6>
+                  3. How can users verify their own trading results on
+                  BITBANCE.AI?
+                </h6>
+                <p>
+                  BITBANCE.AI provides users with detailed dashboards and
+                  analytics tools to track their trading performance. Users can
+                  review their transaction history, profit/loss statements, and
+                  trade execution logs in real-time to verify the accuracy and
+                  effectiveness of the AI system.
+                </p>
+
+                <h6>
+                  4. What measures does BITBANCE.AI take to ensure user
+                  satisfaction and trust?
+                </h6>
+                <p>
+                  BITBANCE.AI prioritizes user satisfaction by providing
+                  transparent performance metrics, responsive customer support,
+                  and regular updates on system improvements. The platform may
+                  also have a user feedback system and community forums where
+                  users can share their experiences and verify the platform’s
+                  reliability.
+                </p>
+
+                <h6>5. Do I need to verify my account?</h6>
+                <p>
+                  Account verification may be required for certain features or
+                  to comply with legal and regulatory requirements. You may need
+                  to provide identification documents for verification.
+                </p>
+              </div>
+              <div id="account" class="tab-content">
+                <h6 style="margin-top: 0px">
+                  1. How do I create an account on BITBANCE.AI?
+                </h6>
+                <p>
+                  Simply visit our website, click on "Sign Up," and provide the
+                  required information to create your account.
+                </p>
+
+                <h6>2. Do I need to verify my account?</h6>
+                <p>
+                  Account verification may be required for certain features or
+                  to comply with legal and regulatory requirements. You may need
+                  to provide identification documents for verification.
+                </p>
+
+                <h6>3. Can I use BITBANCE.AI on multiple devices?</h6>
+                <p>
+                  Yes, you can access your BITBANCE.AI account from multiple
+                  devices. Simply log in using your credentials.
+                </p>
+
+                <h6>4. Does BITBANCE.AI provide financial advice?</h6>
+                <p>
+                  No, BITBANCE.AI does not provide financial, investment, or
+                  legal advice. The platform is a tool for automated trading,
+                  and all trading decisions are your responsibility.
+                </p>
+              </div>
+              <div id="payouts" class="tab-content">
+                <h6 style="margin-top: 0px">
+                  1. What is the minimum deposit amount?
+                </h6>
+                <p>
+                  The advantage of the Company’s trading platform is that you
+                  don’t have to deposit large amounts to your account. You can
+                  start trading by investing a small amount of money. The
+                  minimum deposit is $10 USDT.
+                </p>
+
+                <h6>2. How can I deposit?</h6>
+                <p>Once logged in, go to your Dashboard.</p>
+                <ol>
+                  <li>Navigate to the Deposit Section.</li>
+                  <li>Select the Cryptocurrency.</li>
+                  <li>Send Funds to the Deposit Address.</li>
+                  <li>Copy the deposit address provided by BITBANCE.AI.</li>
+                  <li>Enter the amount you wish to deposit.</li>
+                </ol>
+                <p>
+                  Cryptocurrency transactions require blockchain confirmations.
+                  The time it takes for your deposit to reflect in your
+                  BITBANCE.AI account depends on network congestion.
+                </p>
+
+                <h6>3. Deposit Not Showing Up?</h6>
+                <p>
+                  If your deposit does not appear in your BITBANCE.AI account
+                  after 1 hour confirmation time, check the transaction status
+                  on the blockchain using the transaction ID (TXID) from your
+                  external wallet. If the issue persists, contact BITBANCE.AI
+                  support at
+                  <a href="mailto:support@bitbance.ai">support@bitbance.ai</a>.
+                </p>
+              </div>
+              <div id="payment" class="tab-content">
+                <h6 style="margin-top: 0px">1. Are there any withdraw fees?</h6>
+                <p>
+                  No, BITBANCE.AI does not charge any fees for withdraws.
+                  However, blockchain network fees may apply depending on the
+                  cryptocurrency used.
+                </p>
+
+                <h6>2. What should I do if my withdraw is delayed?</h6>
+                <p>
+                  If your withdraw has not been processed within the expected
+                  timeframe, check the transaction status in your account. If
+                  the issue persists, contact BITBANCE.AI support at
+                  <a href="mailto:support@bitbance.ai">support@bitbance.ai</a>.
+                </p>
+
+                <h6>3. Does BITBANCE.AI offer customer support?</h6>
+                <p>
+                  Yes, BITBANCE.AI provides customer support via email and live
+                  chat. For assistance, reach out to
+                  <a href="mailto:support@bitbance.ai">support@bitbance.ai</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t mt-5">Bitbance &copy; 2025</div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/cursor.js"></script>
+    <script>
+      function toggleSidebar() {
+        var sidebar = document.getElementById("sm-sidebar");
+        var burgerMenu = document.querySelector(".burger-menu");
+
+        if (sidebar.style.left === "0px") {
+          sidebar.style.left = "-40%";
+          burgerMenu.innerHTML = "&#9776;";
+        } else {
+          sidebar.style.left = "0px";
+        }
+      }
+      function openTab(event, tabName) {
+        const contents = document.querySelectorAll(".tab-content");
+        const buttons = document.querySelectorAll(".tab-button");
+
+        contents.forEach((content) => content.classList.remove("active"));
+        buttons.forEach((button) => button.classList.remove("active"));
+
+        document.getElementById(tabName).classList.add("active");
+        event.currentTarget.classList.add("active");
+      }
+    </script>
+    <script src="/networkAnimation.js"></script>
+  </body>
+</html>

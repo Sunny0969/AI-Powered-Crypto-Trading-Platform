@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="/images/fav.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/networkanimation.css" />
+    <link rel="stylesheet" href="/dashboard/wallet.css" />
+    <link rel="stylesheet" href="/dashboard/wallet-responsive.css" />
+    <link rel="stylesheet" href="/cursor.css" />
+  </head>
+  <body class="">
+    <div class="mouse-move-big"></div>
+    <div class="mouse-move-sm"></div>
+    <div class="header">
+      <img src="/images/logo.svg" alt="" />
+    </div>
+    <div class="main">
+      <aside>
+        <div class="sidebar">
+          <div class="line"></div>
+          <a href="/dashboard/dashboard.html"
+            ><button class="btn-main">Trade</button>
+          </a>
+          <a href="/dashboard/profile.html"
+            ><button class="btn-main">Account</button>
+          </a>
+          <a href="/dashboard/dashboard.html"
+            ><button class="btn-main">Market</button>
+          </a>
+          <a href="/dashboard/support.html"
+            ><button class="btn-main">Support</button>
+          </a>
+          <a href="new.html">
+            <button class="btn-main">News</button>
+          </a>
+          <a href="/dashboard/wallet.html"
+            ><button class="btn-main active">Wallet</button>
+          </a>
+          <a href="/dashboard/trade.html"
+            ><button class="btn-main">Trades</button>
+          </a>
+          <a class="logout" href="/dashboard/sign-up.html"> Logout </a>
+        </div>
+      </aside>
+      <div class="burger-menu" onclick="toggleSidebar()">&#9776;</div>
+
+      <div id="sm-sidebar" class="sm-sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">&#10006;</button>
+
+        <div class="line"></div>
+        <a href="/dashboard/dashboard.html"
+          ><button class="btn-main">Trade</button></a
+        >
+        <a href="/dashboard/profile.html"
+          ><button class="btn-main">Account</button></a
+        >
+        <a href="/dashboard/dashboard.html"
+          ><button class="btn-main">Market</button></a
+        >
+        <a href="/dashboard/support.html"
+          ><button class="btn-main">Support</button></a
+        >
+        <a href="/dashboard/new.html"><button class="btn-main">News</button></a>
+        <a href="/dashboard/wallet.html"
+          ><button class="btn-main">Wallet</button></a
+        >
+        <a href="/dashboard/trade.html"
+          ><button class="btn-main">Trades</button>
+        </a>
+        <a class="logout" href="/dashboard/sign-up.html"> Logout </a>
+      </div>
+      <div class="container content-section">
+        <div class="wallet-wrapper">
+          <div class="balance-card">
+            <div class="stats">
+              <p class="label">Estimated Balance</p>
+              <h2 class="balance" style="font-size: 23px">$1530.7649012</h2>
+              <p class="pnl">
+                PNL <span class="pnl-amount">+$117.31</span>
+                <span class="pnl-percent">(13.07%)</span>
+              </p>
+            </div>
+
+            <div class="buttons">
+              <a href="deposit.html">
+                <button class="btn-main">Deposit</button>
+              </a>
+              <a href="withdraw.html">
+                <button class="btn-main">Withdraw</button>
+              </a>
+              <a href="transaction.html">
+                <button class="btn-main">Transactions</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="dashboard">
+            <table>
+              <thead>
+                <tr>
+                  <th class="text-disabled pb-4">Coin View</th>
+                  <th class="text-disabled pb-4">Amount</th>
+                  <th class="text-disabled pb-4">Coin Price/Cost Price</th>
+                  <th class="text-disabled pb-4">PNL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="pb-4">
+                    <img src="/images/bcoin.png" class="coin-img" alt="" /> BTC
+                    <span class="secondary-text"> Bitcoin </span>
+                  </td>
+                  <td class="pb-4">0.000412378</td>
+                  <td class="pb-4">$186.2345675</td>
+                  <td
+                    class="profit pb-4"
+                    style="padding-left: 100px !important"
+                  >
+                    +$36.78
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pb-4">
+                    <img src="/images/USDT.png" class="coin-img" alt="" /> USDT
+                    <span class="secondary-text"> TetherUS</span>
+                  </td>
+                  <td class="pb-4">177.25657410</td>
+                  <td class="pb-4">$177.25657410</td>
+                  <td class="loss pb-4" style="padding-left: 100px !important">
+                    -$28.76
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pb-4">
+                    <img src="/images/usdc.png" class="coin-img" alt="" /> USDC
+                    <span class="secondary-text"> USD Coin </span>
+                  </td>
+                  <td class="pb-4">286.17809814</td>
+                  <td class="pb-4">$286.17809814</td>
+                  <td class="pb-4"></td>
+                </tr>
+                <tr>
+                  <td class="pb-4">
+                    <img src="/images/eth.png" class="coin-img" alt="" /> ETH
+                    <span class="secondary-text"> Ethereum </span>
+                  </td>
+                  <td class="pb-4">12.74567654</td>
+                  <td class="pb-4">$9267.675467</td>
+                  <td class="pb-4"></td>
+                </tr>
+                <tr>
+                  <td class="pb-4">
+                    <img src="/images/sol.png" class="coin-img" alt="" /> SOL
+                    <span class="secondary-text"> Solana </span>
+                  </td>
+                  <td class="pb-4">3.05345638</td>
+                  <td class="pb-4">$678.1098767</td>
+                  <td class="pb-4"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div
+          style="
+          border-top: 4px solid rgba(255, 255, 255, 0.4);
+          text-align: center;
+          width: 100%;
+          margin: auto;
+          margin-top: 30px;
+          /* position: absolute;
+          bottom: 0;
+          left: 400px; */
+
+        "
+        >
+          Bitbance &copy; 2025
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="/cursor.js"></script>
+  <script src="/networkAnimation.js"></script>
+  <script>
+    function toggleSidebar() {
+      var sidebar = document.getElementById("sm-sidebar");
+      var burgerMenu = document.querySelector(".burger-menu");
+
+      if (sidebar.style.left === "0px") {
+        sidebar.style.left = "-40%";
+        burgerMenu.innerHTML = "&#9776;";
+      } else {
+        sidebar.style.left = "0px";
+      }
+    }
+  </script>
+</html>

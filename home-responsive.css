@@ -1,0 +1,519 @@
+/* Small Screens (Below 600px) */
+@media screen and (max-width: 599px) {
+  .c-2-a {
+    height: auto;
+    width: auto;
+  }
+  .footer-image {
+    width: 100%;
+    margin: auto;
+  }
+  .text {
+    width: auto;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .gradient {
+    height: 200px;
+  }
+  .image2 {
+    width: 250px;
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  h5 {
+    font-size: 16px;
+    line-height: 20px;
+    width: auto;
+  }
+
+  .img1 {
+    padding-left: 10px;
+  }
+  .feature-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    place-content: center;
+    width: auto;
+  }
+  .text-area {
+    font-size: 26px;
+    background: none;
+    margin-top: 30px;
+  }
+
+  .signup-video {
+    width: 250px;
+    background-size: cover;
+    border-radius: 30px;
+    margin: auto;
+  }
+  .signup-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(0deg, #ebe9fe 40%, #c6bffe 90%);
+  }
+  .display-sm-sidebar {
+    display: block;
+  }
+  .header-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-content: center;
+    align-items: left;
+    padding-left: 30px;
+  }
+  .container {
+    max-width: 95vw;
+    padding: 0 15px;
+  }
+  .hero-text {
+    font-size: 35px;
+    width: auto;
+    text-align: center !important;
+    margin-top: 40px;
+    line-height: 45px;
+  }
+  .header-display {
+    display: none;
+  }
+  .coin-section {
+    justify-content: center;
+    padding-top: 40px;
+  }
+  .stats-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .stats-container {
+    margin: 10px;
+  }
+  .accordion-header button {
+    height: fit-content;
+  }
+  .faq-section h1 {
+    font-size: 40px;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    gap: 20px !important;
+  }
+  .footer {
+    height: fit-content !important;
+  }
+  .news-letter {
+    flex-direction: column !important;
+  }
+  .news-letter input {
+    width: 100% !important;
+  }
+  .news-letter .email {
+    width: 100% !important;
+  }
+  .news-letter .email img {
+    margin-left: 0px !important;
+  }
+  .main-footer {
+    flex-direction: column !important;
+  }
+  .forground h1{
+    font-size: 22px;
+  }
+  .forground p{
+    font-size: 14px;
+  }
+  .img-line{
+    width: 300px !important;
+  }
+}
+
+/* Medium Screens (600px - 999px) */
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  .text {
+    width: auto;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    gap: 20px !important;
+  }
+  .footer {
+    height: fit-content !important;
+  }
+  .news-letter {
+    flex-direction: column !important;
+  }
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin: auto;
+  }
+
+  .card1 {
+    width: 100%;
+    height: auto;
+  }
+  .card2 {
+    width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 25px;
+    line-height: 44px;
+    width: 260px;
+  }
+  h6 {
+    font-size: 14px;
+    line-height: 26px;
+    width: 282px;
+  }
+  /*  */
+  .text-area {
+    font-size: 26px;
+    background: none;
+    margin-top: 30px;
+  }
+
+  .signup-video {
+    width: 100%;
+    background-size: cover;
+    border-radius: 30px;
+  }
+  .signup-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(0deg, #ebe9fe 40%, #c6bffe 90%);
+  }
+  .display-sm-sidebar {
+    display: block;
+  }
+  .header-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-content: center;
+    align-items: left;
+    padding-left: 30px;
+  }
+  .hero-content {
+    margin: auto;
+  }
+  .container {
+    max-width: 90vw;
+    padding: 0 20px;
+  }
+  .hero-text {
+    font-size: 50px;
+    text-align: center !important;
+    margin-top: 150px;
+    line-height: 60px;
+  }
+  .header-display {
+    display: none;
+  }
+  .coin-section {
+    padding-top: 40px;
+  }
+  .stats-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .stats-container {
+    width: 280px;
+    margin: 10px;
+  }
+  .main-footer {
+    flex-direction: column !important;
+  }
+}
+
+/* Small Desktop (1000px - 1299px) */
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin: auto;
+  }
+
+  .card1 {
+    width: 100%;
+    height: auto;
+  }
+  .card2 {
+    width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 25px;
+    line-height: 44px;
+    width: 260px;
+  }
+  h6 {
+    font-size: 14px;
+    line-height: 26px;
+    width: 282px;
+  }
+  /*  */
+  .feature-card {
+    display: flex;
+    align-items: center;
+    width: 420px;
+  }
+  .features-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .text-area {
+    font-size: 26px;
+  }
+  .signup-card {
+    width: 900px;
+    height: auto;
+    display: flex;
+  }
+
+  .signup-video {
+    width: 342px;
+    background-size: cover;
+  }
+  .display-sm-sidebar {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .header-buttons {
+    display: flex;
+  }
+  .hero-text {
+    font-size: 45px;
+    line-height: 65px;
+    color: rgba(255, 255, 255, 1);
+  }
+  .text-container {
+    width: 750px;
+    margin-top: 40px;
+  }
+}
+
+/* Medium Desktop (1300px - 1599px) */
+@media screen and (min-width: 1199px) and (max-width: 1599px) {
+  .c-2-a {
+    height: 270px;
+    width: 380px;
+  }
+  .footer {
+    height: 510px;
+  }
+  .text {
+    width: 420px;
+  }
+  .footer-content {
+    display: flex;
+  }
+
+  .work {
+    display: flex;
+    width: 1250px;
+  }
+
+  .card1 {
+    width: 748px;
+    height: 516px;
+  }
+  .card2 {
+    width: 442px;
+    height: 516px;
+  }
+  h2 {
+    font-size: 37px;
+    line-height: 44px;
+    width: 360px;
+  }
+  h6 {
+    font-size: 19px;
+    line-height: 26px;
+    width: 382px;
+  }
+
+  /*  */
+  .feature-card {
+    display: flex;
+    align-items: center;
+    width: 420px;
+  }
+  .features-items {
+    display: flex;
+    align-items: center;
+  }
+  .text-area {
+    font-size: 30px;
+  }
+  .signup-card {
+    width: 1000px;
+    height: auto;
+    display: flex;
+  }
+
+  .signup-video {
+    width: 342px;
+    background-size: cover;
+  }
+  .display-sm-sidebar {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .header-buttons {
+    display: flex;
+  }
+  .hero-text {
+    font-size: 55px;
+    line-height: 85px;
+    color: rgba(255, 255, 255, 1);
+  }
+  .text-container {
+    width: 900px;
+    margin-top: 40px;
+  }
+}
+
+/* Large Desktop (1600px and above) */
+@media screen and (min-width: 1600px) {
+  .c-2-a {
+    height: 270px;
+    width: 380px;
+  }
+  .footer {
+    height: 510px;
+  }
+  .text {
+    width: 420px;
+  }
+  .footer-content {
+    display: flex;
+  }
+  /* work */
+
+  h3 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  h5 {
+    font-size: 26px;
+    line-height: 30px;
+    width: 715px;
+  }
+
+  .work {
+    display: flex;
+    width: 1250px;
+  }
+
+  .card1 {
+    width: 748px;
+    height: 516px;
+  }
+  .card2 {
+    width: 442px;
+    height: 516px;
+  }
+  h2 {
+    font-size: 37px;
+    line-height: 44px;
+    width: 360px;
+  }
+  h6 {
+    font-size: 19px;
+    line-height: 26px;
+    width: 382px;
+  }
+
+  /*  */
+  .feature-card {
+    display: flex;
+    align-items: center;
+    width: 420px;
+  }
+
+  .features-items {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .text-area {
+    font-size: 34px;
+  }
+  .signup-card {
+    width: 1300px;
+    height: 450px;
+    display: flex;
+  }
+
+  .signup-video {
+    width: 442px;
+  }
+  .display-sm-sidebar {
+    display: none;
+  }
+  .header-buttons {
+    display: flex;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .hero-content {
+    text-align: left;
+  }
+  .container {
+    max-width: 1500px;
+  }
+  .hero-text {
+    font-size: 60px;
+    line-height: 88px;
+    color: rgba(255, 255, 255, 1);
+  }
+  .text-container {
+    width: 1141px;
+  }
+  .header-display {
+    display: block;
+  }
+}

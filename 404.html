@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/home.css" />
+    <link rel="stylesheet" href="/home-responsive.css" />
+    <link rel="stylesheet" href="/cursor.css" />
+    <link rel="shortcut icon" href="/images/fav.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="mouse-move-big"></div>
+    <div class="mouse-move-sm"></div>
+
+    <!-- Hero Section -->
+    <div class="hero-section" style="height: 1118px">
+      <div class="container">
+        <!-- Header Start -->
+        <div class="header-display">
+          <div class="header" data-aos="fade-down" data-aos-duration="1000">
+            <div class="logo">
+              <img src="/images/home-logo.png" alt="logo" />
+              <p class="logo-text">BITBANCE.AI</p>
+            </div>
+            <div class="menu">
+              <p>
+                <a href="/">Home</a>
+              </p>
+              <p>
+                <a href="/about.html">About</a>
+              </p>
+              <p>
+                <a href="/dashboard/faq.html">FAQ</a>
+              </p>
+              <p><a href="/dashboard/dashboard.html"> Dashboard </a></p>
+            </div>
+
+            <div class="header-buttons">
+              <a class="header-button1" href="/dashboard/login.html">Login</a>
+              <a class="header-button2" href="/dashboard/sign-up.html"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Header End -->
+        <div class="display-sm-sidebar">
+          <div class="d-flex justify-content-between">
+            <div class="logo pt-4">
+              <img src="/images/home-logo.png" alt="logo" />
+              <p class="logo-text">BITBANCE.AI</p>
+            </div>
+
+            <div class="">
+              <div class="burger-menu" onclick="toggleSidebar()">&#9776;</div>
+            </div>
+          </div>
+
+          <div id="sm-sidebar" class="sm-sidebar">
+            <button class="close-btn" onclick="toggleSidebar()">
+              &#10006;
+            </button>
+
+            <div class="line"></div>
+            <div class="menu">
+              <a href="/" class="mt-5">Home</a>
+              <a href="/about.html">About</a>
+              <a href="#faq">FAQ</a>
+              <a href="/dashboard/dashboard.html">Dashboard</a>
+            </div>
+            <div class="header-buttons mt-5 mt-lg-0">
+              <a href="/dashboard/login.html" class="header-button2">Login</a>
+              <a href="/dashboard/sign-up.html" class="header-button2"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Content -->
+        <div
+          class="hero-content position-relative"
+          style="
+            flex-direction: column;
+            align-items: center;
+            margin-top: 379px;
+            z-index: 10;
+          "
+        >
+          <h1 style="font-size: 100px">404</h1>
+          <p style="font-size: 50px">Page Not Found</p>
+          <a href="/" class="header-button2">Back to Home</a>
+          <div class="shadow-bg"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- trading experience -->
+    <div class="trading-experience">
+      <div class="footer m-0">
+        <div class="container">
+          <img src="/images/logo.svg" style="height: 74px" alt="" />
+          <div class="footer-content">
+            <div class="text">
+              <p>
+                Whether you're just starting or leveling up, our AI-powered
+                platform is designed to help you win in the crypto market.
+              </p>
+              <div
+                class="icons"
+                style="margin-top: 30px; display: flex; gap: 20px"
+              >
+             <a href="https://facebook.com/">
+                  <img src="/images/fb.png" alt="" />
+                </a>
+                <a href="https://youtube.com/">
+                  <img src="/images/yt.png" alt="" />
+                </a>
+                <a href="https://x.com/">
+                  <img src="/images/x.png" alt="" />
+                </a>
+                <a href="https://instagram.com/">
+                  <img src="/images/insta.png" alt="" />
+                </a>
+                <a href="https://tiktok.com/">
+                  <img src="/images/tiktok.png" alt="" />
+                </a>
+                <a href="https://telegram.com/">
+                  <img src="/images/telegram.png" alt="" />
+                </a>
+              </div>
+              <div style="margin-top: 30px" class="d-flex news-letter">
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    placeholder="Search..."
+                    class="search-bar"
+                  />
+                  <img src="/images/search.png" class="search-icon" alt="" />
+                </div>
+                <div class="email">
+                  <img
+                    src="/images/email.png"
+                    style="margin-left: 60px; margin-right: 5px"
+                    alt=""
+                  />
+                  support@bitbance.ai
+                </div>
+              </div>
+            </div>
+            <div class="links">
+              <a href="/term-condition.html">Term & Conditions</a>
+              <a href="/cookie-policy.html">Cookie Policy</a>
+              <a href="/about.html">About Us</a>
+            </div>
+            <div class="c-2-a">
+              <div class="forground">
+                <h1>Ready to Take the First Step?</h1>
+                <p>
+                  Join thousands of successful traders who trust BITBANCE.AI to
+                  maximize their profits.
+                </p>
+                <a href="/dashboard/sign-up.html">Sign Up Now</a>
+              </div>
+              <img src="/images/bg-img.png" alt="" class="footer-image" />
+            </div>
+          </div>
+          <div class="d-flex gap-3" style="margin-top: 106.4px">
+            <p
+              style="
+                border-right: 1px solid rgba(239, 238, 255, 0.47);
+                padding-right: 25px;
+                color: rgba(239, 238, 255, 0.47);
+              "
+            >
+              © Copyright 2025
+            </p>
+            <p
+              style="
+                border-right: 1px solid rgba(239, 238, 255, 0.47);
+                padding-right: 25px;
+                color: rgba(239, 238, 255, 0.47);
+              "
+            >
+              All Rights Reserved
+            </p>
+            <p style="color: rgba(239, 238, 255, 0.47)">Powered by</p>
+            <p>BITBANCE _Labs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function toggleSidebar() {
+        var sidebar = document.getElementById("sm-sidebar");
+        var burgerMenu = document.querySelector(".burger-menu");
+
+        if (sidebar.style.left === "0px") {
+          sidebar.style.left = "-70%";
+          burgerMenu.innerHTML = "&#9776;";
+        } else {
+          sidebar.style.left = "0px";
+        }
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="/cursor.js"></script>
+    <script src="/networkAnimation.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let starDots = document.querySelectorAll(".star-dots");
+        starDots.forEach(function (dot) {
+          if (Math.random() < 0.5) {
+            dot.style.animationDelay = Math.random() + "s";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

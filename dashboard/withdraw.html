@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="/images/fav.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/dashboard/deposit.css" />
+    <link rel="stylesheet" href="/dashboard/deposite-responsive.css" />
+    <link rel="stylesheet" href="/networkanimation.css" />
+    <link rel="stylesheet" href="/cursor.css" />
+  </head>
+  <body>
+    <div class="mouse-move-big"></div>
+    <div class="mouse-move-sm"></div>
+    <div class="header">
+      <img src="/images/logo.svg" alt="" s />
+      <div class="header-menu">
+        <a href="deposit.html">
+          <button class="btn-main">Deposit Crypto</button>
+        </a>
+        <a href="withdraw.html">
+          <button class="btn-main active">Withdraw Crypto</button>
+        </a>
+      </div>
+      <div></div>
+    </div>
+    <div class="main">
+      <aside>
+        <div class="sidebar">
+          <div class="line"></div>
+          <a href="/dashboard/dashboard.html"
+            ><button class="btn-main">Trade</button>
+          </a>
+          <a href="/dashboard/profile.html"
+            ><button class="btn-main">Account</button>
+          </a>
+          <a href="/dashboard/dashboard.html"
+            ><button class="btn-main">Market</button>
+          </a>
+          <a href="/dashboard/support.html"
+            ><button class="btn-main">Support</button>
+          </a>
+          <a href="new.html">
+            <button class="btn-main">News</button>
+          </a>
+          <a href="trade.html">
+            <button class="btn-main">Trades</button>
+          </a>
+          <a href="/dashboard/wallet.html"
+            ><button class="btn-main">Wallet</button>
+          </a>
+          <a class="logout" href="/dashboard/sign-up.html"> Logout </a>
+        </div>
+      </aside>
+      <div class="burger-menu" onclick="toggleSidebar()">&#9776;</div>
+
+      <div id="sm-sidebar" class="sm-sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">&#10006;</button>
+
+        <div class="line"></div>
+        <a href="/dashboard/dashboard.html"
+          ><button class="btn-main">Trade</button></a
+        >
+        <a href="/dashboard/profile.html"
+          ><button class="btn-main">Account</button></a
+        >
+        <a href="/dashboard/dashboard.html"
+          ><button class="btn-main">Market</button></a
+        >
+        <a href="/dashboard/support.html"
+          ><button class="btn-main">Support</button></a
+        >
+        <a href="/dashboard/new.html"><button class="btn-main">News</button></a>
+        <a href="/dashboard/wallet.html"
+          ><button class="btn-main">Wallet</button></a
+        >
+        <a href="/dashboard/trade.html"
+          ><button class="btn-main">Trades</button></a
+        >
+        <a class="logout" href="/dashboard/sign-up.html"> Logout </a>
+      </div>
+      <div class="container-sm content-section">
+        <div class="mx-auto">
+          <p>Select Coin</p>
+
+          <div class="deposit-container">
+            <div class="position-relative w-100">
+              <button
+                style="margin: 0"
+                id="dropdownBtn"
+                class="px-4 py-3 text-left text-white rounded-lg d-flex justify-content-between items-center w-100 input-field"
+              >
+                <span id="selectedOption" class="selectedOptionContainer"
+                  >Select Coin</span
+                >
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+
+              <ul
+                id="dropdownMenu"
+                class="absolute bg-purple-800 mt-2 rounded-lg shadow-lg z-10"
+              >
+                <li class="dropdown-item" data-value="USDT">
+                  <img src="/images/USDT.png" alt="" />USDT
+                  <span class="text-secondary"> USD Coin </span>
+                </li>
+                <li class="dropdown-item" data-value="USDT">
+                  <img src="/images/usdc.png" alt="" /> USDC
+                  <span class="text-secondary"> USD Coin </span>
+                </li>
+                <li class="dropdown-item" data-value="BTC">
+                  <img src="/images/bcoin.png" alt="" /> BTC
+                  <span class="text-secondary"> Bitcoin </span>
+                </li>
+                <li class="dropdown-item" data-value="ETH">
+                  <img src="/images/eth.png" alt="" />ETH
+                  <span class="text-secondary"> Ethereum </span>
+                </li>
+                <li class="dropdown-item" data-value="BNB">
+                  <img src="/images/bnb.png" alt="" /> BNB
+                  <span class="text-secondary"> Binance </span>
+                </li>
+                <li class="dropdown-item" data-value="SOL">
+                  <img src="/images/sol.png" alt="" /> SOL
+                  <span class="text-secondary"> Solana </span>
+                </li>
+
+                <li class="dropdown-item" data-value="LTC">
+                  <img src="/images/ltc.png" alt="" />LTC
+                  <span class="text-secondary"> Litecoin </span>
+                </li>
+                <li class="dropdown-item" data-value="TRX">
+                  <img src="/images/trx.png" alt="" />TRX
+                  <span class="text-secondary"> Tron </span>
+                </li>
+              </ul>
+            </div>
+            <div class="crypto-container">
+              <button class="crypto-button" onclick="FillUSDT()">
+                <img src="/images/USDT.png" alt="USDT" /> USDT
+              </button>
+              <button class="crypto-button" onclick="FillUSDC()">
+                <img src="/images/usdc.png" alt="USDC" /> USDC
+              </button>
+              <button class="crypto-button" onclick="FillBTC()">
+                <img src="/images/bcoin.png" alt="BTC" /> BTC
+              </button>
+              <button class="crypto-button" onclick="FillSOL()">
+                <img src="/images/sol.png" alt="SOL" /> SOL
+              </button>
+            </div>
+            <p>Address</p>
+            <input
+              type="text"
+              placeholder="Enter Address"
+              class="input-field"
+            />
+            <div class="position-relative w-100">
+              <button
+                id="dropdownBtn2"
+                class="text-left text-white rounded-lg d-flex justify-content-between items-center w-100 input-field mt-2"
+                style="margin: 0"
+              >
+                <span id="selectedOption2">Select Network</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+
+              <ul
+                id="dropdownMenu2"
+                class="absolute bg-purple-800 mt-2 rounded-lg shadow-lg z-10"
+              >
+                <li class="dropdown-item" data-value="TRX">
+                  TRX <span class="text-secondary">Tron [TRC 20]</span>
+                </li>
+                <li class="dropdown-item" data-value="BTC">
+                  BTC <span class="text-secondary"> Bitcoin</span>
+                </li>
+                <li class="dropdown-item" data-value="MATIC">
+                  MATIC <span class="text-secondary"> Polygon Pos</span>
+                </li>
+                <li class="dropdown-item" data-value="ETH">
+                  ETH <span class="text-secondary"> Etherium [ERC20]</span>
+                </li>
+                <li class="dropdown-item" data-value="SOL">
+                  SOL <span class="text-secondary"> Solana</span>
+                </li>
+                <li class="dropdown-item" data-value="XLM">
+                  XLM <span class="text-secondary"> Stellar Network</span>
+                </li>
+                <li class="dropdown-item" data-value="BRC">
+                  BSC <span class="text-secondary"> BNB Smart Chain</span>
+                </li>
+                <li class="dropdown-item" data-value="LTC">
+                  LTC <span class="text-secondary"> Litecoin</span>
+                </li>
+              </ul>
+            </div>
+            <p class="text-disabled">
+              CAUTION: Ensure the recipient address has been activated;
+            </p>
+            <p class="text-disabled">otherwise, your withdraw will fail.</p>
+            <p class="pt-3">Withdraw Amount</p>
+            <div class="position-relative">
+              <label for="" class="coin-label">USDT</label>
+              <input type="text" placeholder="Minimum 10" class="input-field" />
+            </div>
+            <div
+              class="d-flex justify-content-between"
+              style="line-height: 0px"
+            >
+              <p class="text-secondary">Available Withdraw</p>
+              <p>0.00000001 USDT</p>
+            </div>
+            <div
+              class="d-flex justify-content-between"
+              style="line-height: 0px; margin-top: -20px"
+            >
+              <p class="text-secondary">24h Remaining Limit</p>
+              <p>
+                8,000,000.0 USDT /
+                <span class="text-secondary"> 8,000,000.0 USDT </span>
+              </p>
+            </div>
+            <hr />
+            <div class="d-flex align-items-center justify-content-between">
+              <div>
+                <div class="text-secondary">Recieved Amount</div>
+                <div>0.00 USDT</div>
+                <div class="text-secondary">Network Fee 1.00 USDT</div>
+              </div>
+              <button class="btn-main">Withdraw</button>
+            </div>
+          </div>
+
+          <div class="mt-5">Recent Withdraws</div>
+          <div class="scroll-container mb-5">
+            <div class="child">
+              <div class="box shadow-none">
+                <div class="trade-details mt-2">
+                  <span
+                    class="text-secondary text-left"
+                    style="font-size: 16px; width: 150px; text-align: left"
+                  >
+                    Asset/Data
+                  </span>
+                  <span
+                    class="text-secondary"
+                    style="width: 280px; font-size: 16px"
+                    >Amount</span
+                  >
+                  <span
+                    class="text-secondary"
+                    style="width: 280px; font-size: 16px"
+                  >
+                    Network
+                  </span>
+                  <span
+                    class="text-secondary"
+                    style="width: 250px; font-size: 16px"
+                  >
+                    Address
+                  </span>
+                  <span
+                    class="text-secondary"
+                    style="width: 250px; font-size: 16px"
+                  >
+                    TxID
+                  </span>
+                  <span
+                    class="text-secondary"
+                    style="width: 250px; font-size: 16px"
+                  >
+                    Status
+                  </span>
+                </div>
+                <div class="trade-details">
+                  <span class="font-small" style="width: 150px">
+                    <div class="currency" style="padding-left: 0px">
+                      <div class="">
+                        <img src="/images/Container1.png" alt="" />
+                      </div>
+                      <div class="">
+                        <p class="pb-3">USDT</p>
+                      </div>
+                    </div>
+                    <span class="text-secondary"> Date 2025-01-22 20:18 </span>
+                  </span>
+                  <span class="font-small" style="width: 280px">130.00</span>
+                  <span class="font-small" style="width: 280px"> TRX </span>
+                  <span class="font-small" style="width: 250px">
+                    TMtQktbvsjdgdbdgdbdffwhsv
+                  </span>
+                  <span class="font-small" style="width: 250px">
+                    4cf92gsjdbxtw35vssh
+                  </span>
+                  <span class="font-small" style="width: 250px">
+                    Complete
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t">Bitbance &copy; 2025</div>
+      </div>
+    </div>
+
+    <script>
+      function FillUSDT() {
+        document.getElementById(
+          "selectedOption"
+        ).innerHTML = `<img src="/images/USDT.png" alt="" />USDT
+                    <span class="text-secondary"> USD Coin </span>`;
+      }
+      function FillUSDC() {
+        document.getElementById(
+          "selectedOption"
+        ).innerHTML = `<img src="/images/usdc.png" alt="" />USDC
+                    <span class="text-secondary"> USD Coin </span>`;
+      }
+      function FillSOL() {
+        document.getElementById(
+          "selectedOption"
+        ).innerHTML = `<img src="/images/sol.png" alt="" />SOL
+                    <span class="text-secondary"> Solana </span>`;
+      }
+      function FillBTC() {
+        document.getElementById(
+          "selectedOption"
+        ).innerHTML = `<img src="/images/bcoin.png" alt="" />BTC
+                    <span class="text-secondary"> Bitcoin </span>`;
+      }
+      function toggleBg(button) {
+        button.classList.toggle("bg-main");
+      }
+      const dropdownBtn = document.getElementById("dropdownBtn");
+      const dropdownMenu = document.getElementById("dropdownMenu");
+      const selectedOption = document.getElementById("selectedOption");
+
+      dropdownBtn.addEventListener("click", function (event) {
+        event.stopPropagation();
+        dropdownMenu.style.display =
+          dropdownMenu.style.display === "block" ? "none" : "block";
+      });
+
+      document.addEventListener("click", function (event) {
+        if (
+          !dropdownBtn.contains(event.target) &&
+          !dropdownMenu.contains(event.target)
+        ) {
+          dropdownMenu.style.display = "none";
+        }
+      });
+
+      document
+        .querySelectorAll("#dropdownMenu .dropdown-item")
+        .forEach((item) => {
+          item.addEventListener("click", function () {
+            selectedOption.innerHTML = this.innerHTML;
+            dropdownMenu.style.display = "none";
+          });
+        });
+
+      // Fix for second dropdown
+      const dropdownBtn2 = document.getElementById("dropdownBtn2");
+      const dropdownMenu2 = document.getElementById("dropdownMenu2");
+      const selectedOption2 = document.getElementById("selectedOption2");
+
+      dropdownBtn2.addEventListener("click", function (event) {
+        event.stopPropagation();
+        dropdownMenu2.style.display =
+          dropdownMenu2.style.display === "block" ? "none" : "block";
+      });
+
+      document.addEventListener("click", function (event) {
+        if (
+          !dropdownBtn2.contains(event.target) &&
+          !dropdownMenu2.contains(event.target)
+        ) {
+          dropdownMenu2.style.display = "none";
+        }
+      });
+
+      // This is the corrected part
+      document
+        .querySelectorAll("#dropdownMenu2 .dropdown-item")
+        .forEach((item) => {
+          item.addEventListener("click", function () {
+            selectedOption2.innerHTML = this.innerHTML;
+            dropdownMenu2.style.display = "none";
+          });
+        });
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/cursor.js"></script>
+    <script src="/networkAnimation.js"></script>
+    <script>
+      function toggleSidebar() {
+        var sidebar = document.getElementById("sm-sidebar");
+        var burgerMenu = document.querySelector(".burger-menu");
+
+        if (sidebar.style.left === "0px") {
+          sidebar.style.left = "-40%";
+          burgerMenu.innerHTML = "&#9776;";
+        } else {
+          sidebar.style.left = "0px";
+          burgerMenu.innerHTML = "&#10006;";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+/* Default styles (for large screens, desktops) */
+
+/*  Mobile (Small screens) */
+@media screen and (max-width: 600px) {
+  .logo-img {
+    width: 100px;
+    object-fit: contain;
+  }
+  .box-wrapper {
+    padding: 5px;
+  }
+
+  .hero-section-button {
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 10px;
+    justify-self: center;
+  }
+  .text-width {
+    width: 100%;
+  }
+  .box {
+    padding: 66px 15px 15px 15px;
+  }
+  .coin-image {
+    display: none !important;
+  }
+  .coin-image-2 {
+    display: block !important;
+    height: 300px;
+    position: relative;
+  }
+
+  .circle {
+    display: none !important;
+  }
+  .p1 {
+    display: none !important;
+  }
+  .section-width {
+    width: 100%;
+  }
+}
+
+/*  Tablet (Medium screens) */
+@media screen and (max-width: 999px) {
+ 
+  .box-wrapper {
+    padding: 20px;
+  }
+  .logo-img {
+    width: 100px;
+    object-fit: contain;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px;
+  }
+  .hero-section-button {
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 10px;
+    justify-self: center;
+  }
+  .text-width {
+    width: 100%;
+  }
+  .coin-image {
+    display: block;
+  }
+  .coin-image-2 {
+    display: none;
+  }
+}
+
+/*  Large screens (Desktops & above) */
+@media screen and (min-width: 1000px) {
+ 
+  .logo-img {
+    width: 200px;
+    object-fit: contain;
+  }
+
+  .box-wrapper {
+    padding: 20px;
+  }
+  .box {
+    padding: 50px;
+  }
+  .card-container {
+    display: flex;
+    gap: 40px;
+    padding: 30px;
+  }
+
+  .border-lg-0 {
+    border: none !important;
+  }
+  .hero-section-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+  .footer-description {
+    width: 300px;
+  }
+  .cols {
+    width: 600px;
+  }
+  .text-width {
+    width: 400px;
+  }
+  .coin-image {
+    display: block;
+  }
+  .coin-image-2 {
+    display: none;
+  }
+  .section-width {
+    width: 900px;
+  }
+}

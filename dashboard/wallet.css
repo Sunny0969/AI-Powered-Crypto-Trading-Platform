@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  box-sizing: border-box;
+  font-family: "Anta", serif;
+}
+:root {
+  --primary-bg: linear-gradient(
+    0deg,
+    rgba(74, 31, 184, 1),
+    rgba(122, 90, 248, 1)
+  );
+  --secondary-bg: rgba(164, 144, 236, 0.25);
+  --border: 1px solid #a491ec;
+  --gray-dark: rgba(255, 255, 255, 0.4);
+  --gray-light: #9e9d9d;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background: rgba(122, 90, 248, 1);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #ffffff;
+}
+p {
+  margin: 0 !important;
+  margin-top: 20px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+body {
+  color: white;
+  background: var(--primary-bg);
+  background-attachment: fixed;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.header {
+  padding: 0px 35px;
+  height: 59px;
+  margin-top: 27px;
+  display: flex;
+  justify-content: space-between;
+}
+.main {
+  display: flex;
+}
+.content-section {
+  margin-top: -60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+aside {
+  width: 127px;
+  position: relative;
+  display: inline-block;
+  height: 100vh;
+  margin-top: -86px;
+}
+.header {
+  padding: 0px 35px;
+  height: 59px;
+  margin-top: 27px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-menu {
+  justify-content: end;
+  display: flex;
+  gap: 13px;
+}
+
+.sidebar {
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: var(--secondary-bg);
+  position: fixed;
+  border: var(--border);
+  width: 127px;
+  height: 82vh;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.sidebar .line {
+  margin-bottom: 0px;
+  margin-top: 60px;
+  width: 86.36px;
+  height: 1px;
+  box-shadow: 0px 5px 50px 50px #8267db;
+  background: #241f47;
+}
+.sidebar .btn-main {
+  width: 90px;
+  margin-top: 35px;
+  border-radius: 5px;
+}
+.sidebar .logout {
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  bottom: 30px;
+}
+.btn-main {
+  width: 115px;
+  height: 36px;
+  font-size: 16px;
+  background: var(--secondary-bg);
+  border-radius: 2px;
+  border: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s all ease;
+}
+.btn-main:hover {
+  transform: scale(1.04);
+}
+
+.top-menu button {
+  width: 200px;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.balance-card {
+  display: flex;
+  width: 100%;
+  height: 161px;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--secondary-bg);
+  border-radius: 5px;
+  border: var(--border);
+  padding: 16px 37px;
+}
+.stats {
+  font-size: 23px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.dashboard {
+  height: 737px;
+  background: var(--secondary-bg);
+  border: var(--border);
+  border-radius: 5px;
+  margin-top: 37px;
+  overflow-x: scroll;
+}
+table {
+  width: 1216px;
+}
+thead tr th {
+  width: 25%;
+  font-size: 23px;
+  font-weight: normal;
+  text-align: center;
+  color: var(--gray-dark);
+}
+tbody tr td {
+  width: 25%;
+  font-size: 23px;
+  font-weight: normal;
+  padding-left: 49px;
+}
+.secondary-text {
+  color: var(--gray-dark);
+}
+.coin-img {
+  width: 34px;
+  height: 34px;
+}
+.sm-sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: -40%;
+  background-color: #6f4ce9;
+  color: white;
+  z-index: 999;
+  padding-top: 60px;
+  transition: 0.3s ease;
+}
+
+.sm-sidebar a {
+  display: block;
+  padding: 15px;
+}
+
+.sm-sidebar .logout {
+  padding: 15px;
+  display: block;
+  text-align: center;
+  color: white;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.burger-menu {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.font-small {
+  font-weight: normal;
+}
+.active {
+  background: #241f47 !important;
+}

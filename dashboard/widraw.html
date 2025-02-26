@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="/images/fav.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/networkanimation.css" />
+    <link rel="stylesheet" href="/dashboard/dashboard.css" />
+    <style>
+      .balance-card {
+        padding: 20px;
+        width: 800px;
+        border-radius: 10px;
+        text-align: left;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.1);
+      }
+      .buttons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .button {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+      .dashboard {
+        background: #1a132d;
+        margin-top: 20px;
+        padding: 20px;
+        width: 800px;
+        border-radius: 10px;
+        box-shadow: inset 0 0 10px white, 0 0 5px purple;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+      th {
+        color: grey;
+      }
+      .profit {
+        color: lightgreen;
+      }
+      .loss {
+        color: red;
+      }
+    </style>
+    <link rel="stylesheet" href="/cursor.css" />
+  </head>
+  <body class="">
+    <canvas id="networkAnimation"></canvas>
+    <div class="mouse-move-big"></div>
+    <div class="mouse-move-sm"></div>
+    <div class="sidebar">
+      <div class="line"></div>
+      <button><a href="/dashboard/dashboard.html"> Trade </a></button>
+      <button><a href="/dashboard/profile.html"> Account </a></button>
+      <button><a href="/dashboard/dashboard.html"> Market </a></button>
+      <button><a href="/dashboard/support.html"> Support </a></button>
+      <button>News</button>
+      <button><a href="/dashboard/wallet.html"> Wallet </a></button>
+      <a class="bottom" href="/dashboard/sign-up.html"> Logout </a>
+    </div>
+
+    <div class="balance-card">
+      <h3>Estimated Balance</h3>
+      <h2>$1530.76</h2>
+      <p>PNL <span class="profit">+$117.31 (13.07%)</span></p>
+      <div class="buttons">
+        <button class="button">Deposit</button>
+        <button class="button">Withdraw</button>
+        <button class="button">Transactions</button>
+      </div>
+    </div>
+    <div class="dashboard">
+      <table>
+        <thead>
+          <tr>
+            <th>Coin View</th>
+            <th>Amount</th>
+            <th>Coin Price/Cost Price</th>
+            <th>PNL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>💎 BTC Bitcoin</td>
+            <td>0.000412378</td>
+            <td>$186.2345675</td>
+            <td class="profit">+$36.78</td>
+          </tr>
+          <tr>
+            <td>💵 USDT TetherUS</td>
+            <td>177.25657410</td>
+            <td>$177.25657410</td>
+            <td class="loss">-$28.76</td>
+          </tr>
+          <tr>
+            <td>🌐 USDC USD Coin</td>
+            <td>286.17809814</td>
+            <td>$286.17809814</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>💎 ETH Ethereum</td>
+            <td>12.74567654</td>
+            <td>$9267.675467</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>🔄 SOL Solana</td>
+            <td>3.05345638</td>
+            <td>$678.1098767</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>💳 XRP</td>
+            <td>1.02345432</td>
+            <td>$197.6752436</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="/cursor.js"></script>
+  <script src="/networkAnimation.js"></script>
+</html>

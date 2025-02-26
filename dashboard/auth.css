@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+* {
+  font-family: "Anta";
+  color: white;
+}
+:root {
+  --primary-bg: linear-gradient(
+    0deg,
+    rgba(74, 31, 184, 1),
+    rgba(122, 90, 248, 1)
+  );
+  --secondary-bg: rgba(164, 144, 236, 0.25);
+  --border: 1px solid #a491ec;
+  --gray-dark: rgba(255, 255, 255, 0.4);
+  --gray-light: #9e9d9d;
+}
+body {
+  background: var(--primary-bg);
+  min-height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.form {
+  background: var(--secondary-bg);
+  margin-top: 50px;
+  width: 403px;
+  height: fit-content;
+  padding-left: 37px;
+  padding-right: 37px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 5px;
+  border: 1px solid rgba(164, 145, 236, 1);
+}
+.logo {
+  height: 47px;
+  width: 160px;
+}
+.main-heading {
+  margin-top: 23px;
+  font-size: 34px;
+}
+.text-disabled {
+  color: var(--gray-light);
+}
+.input-field {
+  border-radius: 5px;
+  background: var(--secondary-bg);
+  border: var(--border);
+  padding: 15px;
+  text-align: center;
+  margin-top: 16px;
+  width: 100%;
+  display: inline-block;
+  transition: 0.3s all ease;
+}
+.input-field::placeholder {
+  color: var(--gray-dark);
+}
+.input-field:focus {
+  transform: scale(1.04);
+  outline: none;
+}
+.btn-main {
+  background: var(--secondary-bg);
+  border: var(--border);
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 45px;
+  padding: 15px;
+  transition: 0.3s all ease;
+}
+.btn-main:hover {
+  box-shadow: inset 0px 0px 8px 0px rgba(255, 255, 255, 0.5),
+    0px 0px 20px 0px rgba(255, 255, 255, 0.608);
+  transform: scale(1.04);
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 999px) {
+
+ body {
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    height: auto;
+  }
+  .form {
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

@@ -1,0 +1,191 @@
+@media screen and (max-width: 600px) {
+  .header-menu {
+    justify-content: center;
+  }
+  .dashboard-logo {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-button {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 18px;
+    margin: auto;
+  }
+  .main-button2 {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 18px;
+    margin: auto;
+  }
+  .sub-button {
+    width: 85% !important;
+    height: auto !important;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .sm-sidebar .btn-main {
+    width: 150px;
+  }
+
+  .child {
+    width: 1200px;
+  }
+  .mouse-move-big {
+    display: none;
+  }
+  .mouse-move-sm {
+    display: none;
+  }
+  .font-small {
+    font-size: 16px;
+  }
+
+  .burger-menu {
+    display: block !important;
+  }
+  .sm-sidebar {
+    width: 40%;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  aside {
+    width: 0px;
+    margin-left: 0px;
+    display: none;
+  }
+  .scroll-container {
+    overflow-x: auto;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .dashboard-logo {
+    display: flex;
+    left: 180px;
+  }
+  .header-menu {
+    justify-content: center;
+  }
+  .sm-sidebar .btn-main {
+    width: 100%;
+  }
+  .btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main-button {
+    width: 63% !important;
+    height: auto !important;
+    font-size: 18px;
+    margin: auto;
+  }
+  .main-button2 {
+    width: 63% !important;
+    height: auto !important;
+    font-size: 18px;
+    margin: auto;
+  }
+  .sub-button {
+    width: 412px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 150px;
+  }
+
+  .child {
+    width: 1200px;
+  }
+  .mouse-move-big {
+    display: none;
+  }
+  .mouse-move-sm {
+    display: none;
+  }
+  .font-small {
+    font-size: 12px;
+  }
+
+  .sm-sidebar {
+    width: 40%;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  aside {
+    width: 0px;
+    margin-left: 0px;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .dashboard-logo {
+    display: flex;
+    left: 180px;
+  }
+  .header-menu {
+    justify-content: end;
+  }
+  .sub-button {
+    width: 412px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .main-button {
+    width: 194px;
+    font-size: 18px;
+  }
+  .main-button2 {
+    width: 67px;
+  }
+
+  .btn-wrapper {
+    display: flex;
+  }
+
+  .panel {
+    display: flex;
+    height: 141px;
+    justify-content: space-between;
+    margin-top: 110px;
+  }
+
+  .mouse-move-big {
+    display: block;
+  }
+  .mouse-move-sm {
+    display: block;
+  }
+  .font-small {
+    font-size: 12px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  aside {
+    width: 127px;
+
+    margin-left: 50px !important;
+  }
+}
