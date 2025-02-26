@@ -19,6 +19,6 @@
 ## 📝 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
-![Uploading 127.0.0.1_5502_index.html (2).png…]()
 
+![127 0 0 1_5502_index html (2)](https://github.com/user-attachments/assets/3183aa93-095b-4bd2-b07c-e9706c6a6505)
 
